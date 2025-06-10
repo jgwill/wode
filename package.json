@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "wode": "node scripts/wode-scaffold.js"
+    "wode": "node scripts/wode-scaffold.js",
+    "olca": "node scripts/wode-olca.js"
   }
 }

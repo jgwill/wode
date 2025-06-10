@@ -35,3 +35,11 @@ npm run wode
 ```
 
 This runs `scripts/wode-scaffold.js`, which you can modify to add new commands or automate tasks.
+
+You can also explore integration with the experimental **olca** Python package. After installing it via `pip install olca`, run:
+
+```sh
+npm run olca
+```
+
+This executes `scripts/wode-olca.js`, which simply invokes `olca --help` so you can see the available options and start experimenting.
