@@ -5,6 +5,7 @@
   "scripts": {
     "wode": "node scripts/wode-scaffold.js",
     "olca": "node scripts/wode-olca.js",
-    "olca-info": "node scripts/wode-olca-info.js"
+    "olca-info": "node scripts/wode-olca-info.js",
+    "olca-fuse": "node scripts/wode-olca-fuse.js"
   }
 }

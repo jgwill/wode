@@ -51,3 +51,11 @@ npm run olca-info
 ```
 
 This command calls a small Python helper that prints the `olca` package version and module path.
+
+Once you've installed the `coaiapy` package, you can forward Langfuse commands through this fork using:
+
+```sh
+npm run olca-fuse -- --help
+```
+
+This simply invokes `coaia fuse` under the hood, keeping the familiar `olca` workflow while tapping into the newer CLI features.
