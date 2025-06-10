@@ -59,3 +59,15 @@ npm run olca-fuse -- --help
 ```
 
 This simply invokes `coaia fuse` under the hood, keeping the familiar `olca` workflow while tapping into the newer CLI features.
+
+## LangGraph Example
+
+To explore LangGraph 0.4 features, install the necessary packages and run the bundled example:
+
+```sh
+npm install @langchain/langgraph @langchain/openai @langchain/core
+npm run example-graph
+```
+
+The script `scripts/wode-langgraph-example.js` builds a minimal `StateGraph` that asks an LLM to respond to "Hello" and prints the reply. Use this as a starting point for designing more complex graphs or streaming workflows.
+
