@@ -43,3 +43,11 @@ npm run olca
 ```
 
 This executes `scripts/wode-olca.js`, which simply invokes `olca --help` so you can see the available options and start experimenting.
+
+For a quick Python-side check of your installation, you can run:
+
+```sh
+npm run olca-info
+```
+
+This command calls a small Python helper that prints the `olca` package version and module path.

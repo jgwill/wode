@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "wode": "node scripts/wode-scaffold.js",
-    "olca": "node scripts/wode-olca.js"
+    "olca": "node scripts/wode-olca.js",
+    "olca-info": "node scripts/wode-olca-info.js"
   }
 }
