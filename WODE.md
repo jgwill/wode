@@ -1,0 +1,37 @@
+# WODE
+
+This repository is a personal fork of **Claude Code**, Anthropic's agentic coding tool. `claude` lives in your terminal and helps automate routine development tasks through natural language commands.
+
+## Key Features
+
+- Understands your codebase and can execute commands on your behalf.
+- Offers explanations for complex code and streamlines git workflows.
+- Integrates with IDEs or can be called directly in a terminal.
+
+## Getting Started
+
+1. Install Node.js 18 or later.
+2. Install the CLI:
+   ```sh
+   npm install -g @anthropic-ai/claude-code
+   ```
+3. From your project directory, run `claude` to interact with the agent.
+
+## Data Practices
+
+Running `claude` collects limited usage data and feedback to improve the tool. Anthropic stores session feedback transcripts for 30 days and does not use them to train generative models. See `README.md` for more information.
+
+## Goals for this Fork
+
+This fork explores how Claude Code can be customized for personal workflows. Experiment with scripts, add-on commands, or integration hooks to tailor the tool for your projects.
+
+
+## Local Scripts
+
+To experiment with custom workflows, this fork includes a small Node.js scaffold:
+
+```sh
+npm run wode
+```
+
+This runs `scripts/wode-scaffold.js`, which you can modify to add new commands or automate tasks.
