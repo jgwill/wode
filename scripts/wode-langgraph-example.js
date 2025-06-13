@@ -4,7 +4,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import { HumanMessage } from "@langchain/core/messages";
 
 async function main() {
-  const llm = new ChatOpenAI({ modelName: "gpt-3.5-turbo" });
+  const llm = new ChatOpenAI({ modelName: "gpt-3.5-turbo", streaming: true });
 
   const askNode = async (state) => {
     const res = await llm.invoke([new HumanMessage(state.prompt)]);
@@ -24,7 +24,13 @@ async function main() {
     .addEdge("show", END)
     .compile();
 
-  await graph.invoke({ prompt: "Hello" });
+  const stream = await graph.streamEvents({ prompt: "Hello" });
+  for await (const event of stream) {
+    if (event.event === "on_chat_model_stream") {
+      process.stdout.write(event.data.token);
+    }
+  }
+  console.log("\nGraph finished.");
 }
 
 main().catch((err) => {

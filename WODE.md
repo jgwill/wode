@@ -69,5 +69,5 @@ npm install @langchain/langgraph @langchain/openai @langchain/core
 npm run example-graph
 ```
 
-The script `scripts/wode-langgraph-example.js` builds a minimal `StateGraph` that asks an LLM to respond to "Hello" and prints the reply. Use this as a starting point for designing more complex graphs or streaming workflows.
+The script `scripts/wode-langgraph-example.js` now streams tokens as the model replies, demonstrating how LangGraph can emit live events. Use this as a starting point for designing more complex graphs or custom streaming workflows.
 

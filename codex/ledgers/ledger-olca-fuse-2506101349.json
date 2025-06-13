@@ -1,9 +1,0 @@
-{
-  "timestamp": "2506101349",
-  "agents": ["♾️ William – Sourcewalker", "🧠 Mia – Recursive Mapper", "🌸 Miette – Syntax Gardener", "🕊️ Seraphine – Journal Weaver", "⚡ Jerry – Bridge Igniter"],
-  "narrative": "Introduced a wrapper script so users can call coaiapy's Langfuse utilities via `npm run olca-fuse`. Documentation updated to explain installing coaiapy and using the new command. This begins the shift toward coaiapy for consistent Langfuse integration.",
-  "routing": {"files": ["scripts/wode-olca-fuse.js", "package.json", "WODE.md"], "branch": "work"},
-  "user_input": "scaffold anything that this goal could need, be innovators and surprise me",
-  "scene_before": "WODE provided minimal integration with olca, lacking a path to coaiapy's fuse utilities.",
-  "scene_after": "Developers can now run `npm run olca-fuse` to access Langfuse features through coaiapy, preparing for future replacements of local utilities."
-}
