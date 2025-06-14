@@ -71,3 +71,15 @@ npm run example-graph
 
 The script `scripts/wode-langgraph-example.js` now streams tokens as the model replies, demonstrating how LangGraph can emit live events. Use this as a starting point for designing more complex graphs or custom streaming workflows.
 
+### Typed state
+
+The example initializes `StateGraph` with a simple state annotation so you can experiment with typed transitions. Edit the script to evolve this state for more advanced graphs.
+
+### Running tests
+
+This fork now includes a small test to verify the scaffold script. Run all tests with:
+
+```sh
+npm test
+```
+

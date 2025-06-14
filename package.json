@@ -7,6 +7,7 @@
     "olca": "node scripts/wode-olca.js",
     "olca-info": "node scripts/wode-olca-info.js",
     "olca-fuse": "node scripts/wode-olca-fuse.js",
-    "example-graph": "node scripts/wode-langgraph-example.js"
+    "example-graph": "node scripts/wode-langgraph-example.js",
+    "test": "node tests/scaffold.test.js"
   }
 }

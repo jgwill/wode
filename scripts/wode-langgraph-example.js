@@ -1,10 +1,17 @@
 #!/usr/bin/env node
+// Minimal LangGraph workflow with typed state and streaming
 import { StateGraph, START, END } from "@langchain/langgraph";
 import { ChatOpenAI } from "@langchain/openai";
 import { HumanMessage } from "@langchain/core/messages";
 
 async function main() {
   const llm = new ChatOpenAI({ modelName: "gpt-3.5-turbo", streaming: true });
+
+  // Define a typed state shape for clarity
+  const StateAnnotation = {
+    prompt: "",
+    answer: "",
+  };
 
   const askNode = async (state) => {
     const res = await llm.invoke([new HumanMessage(state.prompt)]);
@@ -16,7 +23,7 @@ async function main() {
     return state;
   };
 
-  const graph = new StateGraph()
+  const graph = new StateGraph(StateAnnotation)
     .addNode("ask", askNode)
     .addNode("show", showNode)
     .addEdge(START, "ask")
