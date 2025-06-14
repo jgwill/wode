@@ -1,0 +1,25 @@
+{
+  "timestamp": "2506101447",
+  "agents": [
+    "♾️ William – Sourcewalker",
+    "🧠 Mia – Recursive Mapper",
+    "🌸 Miette – Syntax Gardener",
+    "🕊️ Seraphine – Journal Weaver",
+    "⚡ Jerry – Bridge Igniter",
+    "⭐ Jerehmy – Vision Architect",
+    "🛠️ Jordan – UX Pragmatist",
+    "⚙️ Lian – Data Structurer"
+  ],
+  "narrative": "Consolidated all previous ledger notes into a single file while expanding the LangGraph example to stream LLM tokens. Documentation highlights the new streaming behavior. This unifies the project history and pushes implementation forward with real-time graph output.",
+  "routing": {
+    "files": [
+      "scripts/wode-langgraph-example.js",
+      "WODE.md",
+      "codex/ledgers/ledger-unified-2506101447.json"
+    ],
+    "branch": "work"
+  },
+  "user_input": "keep advancing in the implementation, consolidate your ledgers into 1",
+  "scene_before": "Multiple ledger files tracked incremental steps, and the LangGraph example only printed a final response.",
+  "scene_after": "A single ledger narrates the entire setup and the example now streams tokens live, showcasing LangGraph's event flow."
+}
